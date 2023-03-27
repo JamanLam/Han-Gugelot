@@ -13,3 +13,7 @@
     top: 50vh;
     left: 50vw;
 }
+
+.name:hover{
+    transform: scale(1.5);
+}
