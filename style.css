@@ -1,18 +1,93 @@
-@font-face {
-    font-family: 'Poppins';
-    src: url('fonts/Poppins-Regular.ttf') format('truetype');
-  }
+body {
+  margin: 0;
+  font-family: "poppins", sans-serif;
+  animation-name: color-change;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  background: linear-gradient(-45deg, #e5e5e5, #edebde, #e5e5e5);
+  background-size: 400% 400%;
+  height: 100vh;
+}
 
-  .container {
-    position: relative;
+  /* Set position and size for each h1 element */
+  .features {
+    position: absolute;
+    border: transparent;
+    background-color: transparent;
   }
   
-  .name {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+  /* Position each h1 element at the four corners of the page */
+  .projects {
+    top: 15vh;
+    left: 10vw;
   }
 
-.name:hover{
-    transform: scale(1.5);
+  .skills {
+    top: 15vh;
+    right: 10vw;
+  }
+  
+  .about {
+    bottom: 15vh;
+    left: 10vw;
+  }
+  
+  .contact {
+    bottom: 15vh;
+    right: 10vw;
+  }
+
+  .info{
+    font-size: 1.8em;
+    color: #ffffff; 
+    font-weight: 700;
+    position: absolute;
+    text-align: center;
+    bottom: 12vh;
+    border: 0;
+    letter-spacing: .2ch;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 2px 3px 8px rgba(108, 108, 108, 0.3);
+  }
+
+  /* Set hover effect for each h1 element */
+  .features:hover {
+    transform: scale(1.1);
+  }
+
+  .features:active {
+    transform: scale(.8);
+  }
+
+
+#container3D canvas {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+
+}
+
+@keyframes color-change {
+  0% { background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% { background-position: 0% 50%;}
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 4em;
+  font-weight: bold;
+  padding: .25em 1em;
+  letter-spacing: .01ch;
+  font-weight: 800;
+  transition: background-color 0.2s ease-out, box-shadow 0.2s ease-out;
+  text-shadow: 2px 4px 8px rgba(28, 28, 28, 0.31);
+}
+
+.button {
+  width: 110vw;
+  height: 8vh;
 }

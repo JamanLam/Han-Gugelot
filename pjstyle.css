@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  font-family: "poppins", sans-serif;
+  background-color: #e5e5e5;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container{
+  position: relative;
+  padding: 10vh 8vw ;
+}
+
+.context{
+  position: relative;
+  bottom: 0;
+  padding-top: 15vh;
+  max-width: 38vw;
+}
+  /* Set position and size for each h1 element */
+  .features {
+    position: relative;
+    text-align: center;
+    transition: transform 0.1s ease-out;
+    border: 0;
+  }
+  
+  .productDetail {
+    position: relative;
+    border: 0;
+    padding: 10vh 8vw;
+  }
+  
+  #detail{
+    font-size: 2.5em;
+    color: #ffffff;
+    background-color: #000000;
+    letter-spacing: .01ch;
+    font-weight: 800;
+    padding: .2em 1em;
+    margin-bottom: 2vh;
+  }
+
+
+  .product {
+    position: absolute;
+    padding: 10vh 8vw;
+  }
+  
+  .productName {
+    font-size: 55px;
+    font-weight: 700;
+    color: #0d0d0d;
+  }
+  
+  .subName {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: -1vh;
+    
+  }
+  
+  .description {
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 25vw;
+    margin-bottom: 2vh;
+    padding-top: 42vh;
+  }
+
+  .instructions {
+    text-align: right;
+    font-size: 12px;
+    font-weight: 500;
+    position: fixed;
+    top: 10vh; 
+    right: 8vw;
+    letter-spacing: .5px;
+  }
+
+  .back {
+    font-size: 1.5em;
+    color: #b1b1b1;
+    font-weight: 600;
+    text-align: center;
+    transition: transform 0.1s ease-out;
+    background-color: transparent;
+    border: 0;
+    letter-spacing: .01ch;
+    bottom: 10vh;
+  }
+
+  /* Set hover effect for each h1 element */
+  .features:hover {
+    transform: scale(1.1);
+  }
+
+  .features:active {
+    transform: scale(.8);
+  }
+
+  .back:hover {
+    transform: scale(1.1);
+  }
+
+  .back:active {
+    transform: scale(.8);
+  }
+
+  #overlayBack:hover{
+    transform: scale(1.1);
+  }
+
+  #overlayBack:active{
+    transform: scale(.8);
+  }
+
+.produce{
+  font-size: large;
+  font-weight: 700;
+  margin-bottom: -.3vh;
+}
+
+.overlay {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  transition: transform 0.2s ease-out;
+  backdrop-filter: blur(3px);
+}
+
+#overlayBack {
+  position: absolute;
+  bottom: 10vh;
+  left: 8vw;
+  color: #ffffff;
+}
+
+.productDetail{
+  color: #e5e5e5;
+}
+
+
+  #container3D canvas {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    animation: move-in .5s ease-in-out forwards;
+  }
+  
+  @keyframes move-in {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 0;
+    }
+  }
+  
+  a {
+    text-decoration: none;
+    color: #b1b1b1;
+  }
+
+
+  .carousel {
+    position: relative;
+    width: 60%;
+    overflow: hidden;
+    max-height: 60%;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s;
+  }
+  
+  .carousel-item {
+    flex-shrink: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    padding: 1em 20px;
+    font-size: 1em;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: calc(50% - 20px);
+    width: 60px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    cursor: pointer;
+  }
+  
+  .carousel-control-prev {
+    left: 10px;
+  }
+  
+  .carousel-control-next {
+    right: 10px;
+  }
+  
+  .carousel-item:not(.active) {
+    display: none;
+  }

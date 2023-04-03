@@ -1,0 +1,80 @@
+body {
+	margin: 0;
+	font-family: "poppins", sans-serif;
+	background-color: #e5e5e5;
+	height: 100vh;
+	width: 100vw;
+}
+
+.container {
+	position: relative;
+	padding: 10vh 8vw;
+    max-width: 50%;
+}
+
+.about {
+	font-size: 55px;
+	font-weight: 700;
+	color: #0d0d0d;
+}
+
+.description {
+	font-size: 16px;
+	font-weight: 500;
+	max-width: 32vw;
+	text-align: justify;
+	margin-bottom: 5vh;
+	padding-top: 10vh;
+}
+
+.back {
+	font-size: 1.5em;
+	color: #b1b1b1;
+	font-weight: 600;
+	text-align: center;
+	transition: transform 0.1s ease-out;
+	background-color: transparent;
+	border: 0;
+	letter-spacing: 0.01ch;
+	bottom: 10vh;
+}
+
+.back:hover {
+	transform: scale(1.1);
+}
+
+.back:active {
+	transform: scale(0.8);
+}
+
+.instructions {
+    text-align: right;
+    font-size: 12px;
+    font-weight: 500;
+    position: fixed;
+    top: 10vh; 
+    right: 8vw;
+    letter-spacing: .5px;
+  }
+
+#container3D canvas {
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: -100%;
+	animation: move-in 0.5s ease-in-out forwards;
+}
+
+@keyframes move-in {
+	from {
+		left: -100%;
+	}
+	to {
+		left: 0;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: #b1b1b1;
+}

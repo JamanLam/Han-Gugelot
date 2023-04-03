@@ -1,0 +1,153 @@
+body {
+	margin: 0;
+	font-family: "poppins", sans-serif;
+	animation-name: color-change;
+	animation-duration: 12s;
+	animation-iteration-count: infinite;
+	background: linear-gradient(-45deg, #e5e5e5, #edebde, #e5e5e5);
+	background-size: 400% 400%;
+	height: 100vh;
+}
+
+.container {
+	position: relative;
+	padding: 10vh 8vw;
+	max-width: 50%;
+}
+
+.contact {
+	font-size: 55px;
+	font-weight: 700;
+	color: #0d0d0d;
+}
+
+.description {
+	font-size: 16px;
+	font-weight: 500;
+	max-width: 30vw;
+	text-align: justify;
+	margin-bottom: 5vh;
+	padding-top: 5vh;
+}
+
+.instructions {
+	text-align: right;
+	font-size: 12px;
+	font-weight: 500;
+	position: fixed;
+	top: 10vh;
+	right: 8vw;
+	letter-spacing: 0.5px;
+}
+
+.back {
+	font-size: 1.5em;
+	color: #b1b1b1;
+	font-weight: 600;
+	text-align: center;
+	transition: transform 0.1s ease-out;
+	background-color: transparent;
+	border: 0;
+	letter-spacing: 0.01ch;
+	bottom: 10vh;
+}
+
+.back:hover {
+	transform: scale(1.1);
+}
+
+.back:active {
+	transform: scale(0.8);
+}
+
+#container3D canvas {
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: -100%;
+	animation: move-in 0.5s ease-in-out forwards;
+}
+
+@keyframes move-in {
+	from {
+		left: -100%;
+	}
+	to {
+		left: 0;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: #b1b1b1;
+}
+
+.social-media-list {
+	font-size: 40px;
+}
+
+.social-media-list li {
+	display: inline-block;
+	margin-right: 0.5em;
+	font-size: 180%;
+}
+
+.social-media-list li a {
+	color: #3a3a3a;
+	transition: color 0.5s;
+}
+
+.logo-facebook:hover {
+	color: #3b5998;
+}
+
+.logo-twitter:hover {
+	color: #1d9bf0;
+}
+
+.logo-linkedin:hover {
+	color: #0077b5;
+}
+
+.logo-instagram:hover {
+	color: #c13584;
+}
+
+.contact-title {
+	font-size: 30px;
+	font-weight: 700;
+	color: #0d0d0d;
+	margin-bottom: 2em;
+}
+
+.contact-form input,
+.contact-form textarea {
+	display: block;
+	width: 100%;
+	margin-bottom: 1em;
+	padding: 1em;
+	border-radius: 4px;
+	border: transparent;
+	color: #0d0d0d;
+}
+
+.contact-form textarea {
+	height: 100px;
+	resize: none;
+}
+
+.contact-form button {
+	background: #0d0d0d;
+	color: #fff;
+	border: 0;
+	font-size: 0.8em;
+	font-weight: 800;
+	padding: 0.2em 1em;
+	margin-bottom: 2vh;
+	cursor: pointer;
+}
+
+.contact-form button:hover {
+	background: #b1b1b1;
+	color: #0d0d0d;
+}
